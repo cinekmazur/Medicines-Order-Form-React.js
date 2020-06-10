@@ -1,0 +1,118 @@
+.formContainer {
+  background-color: rgba(0, 0, 0, 0.692);
+  height: auto;
+  width: 50vw;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-formik {
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-formik {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.formik-Container {
+  float: left;
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 20px;
+}
+
+.main-formik input[type="text"],
+input[type="submit"],
+input[type="date"],
+input[type="number"],
+select {
+  padding: 0.5rem;
+  font-size: 16px;
+  width: 90%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  height: 32px;
+}
+
+select {
+  height: 40px;
+}
+
+.main-formik input[type="text"],
+input[type="submit"],
+input[type="date"],
+input[type="number"],
+select:focus {
+  border-color: #007eff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 0 3px rgba(0, 126, 255, 0.1);
+  outline: none;
+}
+
+.main-formik input[type="text"].error,
+input[type="submit"].error,
+input[type="date"].error,
+input[type="number"].error,
+select.error {
+  border-color: red;
+}
+
+.main-formik label {
+  margin-top: 15px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.main-formik .input-feedback {
+  color: red;
+  margin-top: 0.25rem;
+  height: 20px;
+}
+
+.main-formik button {
+  width: 95%;
+  margin: 20px 0;
+  height: 52px;
+  padding: 12px 20px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #08c;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.main-formik button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+.main-formik + button {
+  margin-left: 0.5rem;
+}
+
+.main-formik button.outline {
+  height: 50px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  color: #555;
+}
